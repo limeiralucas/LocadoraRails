@@ -8,7 +8,7 @@ Para clonar o repositório execute o seguinte comando no seu terminal:
 
 `$ git clone https://github.com/lucasalveslm/LocadoraRails.git && cd LocadoraRails`
 
-Executar o seguinte comando para rodar a aplicação:
+Execute o seguinte comando para rodar a aplicação:
 
 `$ rails s` ou `$ rails server`
 
