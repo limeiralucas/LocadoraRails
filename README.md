@@ -12,4 +12,4 @@ Execute o seguinte comando para rodar a aplicação:
 
 `$ rails s` ou `$ rails server`
 
-Após a aplicação poderá ser acessada a partir do endereço [http://localhost:3000](http://localhost:3000)
+Após isso, a aplicação poderá ser acessada a partir do endereço [http://localhost:3000](http://localhost:3000)
