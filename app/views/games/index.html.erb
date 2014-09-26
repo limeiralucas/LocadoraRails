@@ -1,0 +1,33 @@
+<h1>Jogos</h1>
+<table>
+	<thead>
+		<tr>
+			<td>Nome</td>
+			<td>Ano</td>
+			<td>Desenvolvedor</td>
+			<td>Plataforma</td>
+			<td>Distribuidora</td>
+			<td>Disponível?</td>
+			<td>Opções</td>
+		</tr>
+	</thead>
+	<tbody>
+		<% @games.each do |game| %>
+			<tr>
+				<td><%= link_to game.name, game %></td>
+				<td><%= game.year %></td>
+				<td><%= game.developer %></td>
+				<td><%= game.platform %></td>
+				<td><%= game.publisher %></td>
+				<td><%= game.avaliable ? "Sim" : "Não" %></td>
+				<td>
+					<%= link_to "Editar", edit_game_path(game), :class => "edit" %>
+					<%= link_to "Apagar", game_path(game), 
+																method: :delete, data: { confirm: "Tem certeza?" }, 
+																:class => "delete" %>
+				</td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
+<%= link_to "Novo Jogo", new_game_path, :class => "new" %>

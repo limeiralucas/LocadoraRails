@@ -1,0 +1,16 @@
+<h1><%= @game.name %></h1>
+
+<p>Nome: <%= @game.name %></p>
+<p>Ano: <%= @game.year %></p>
+<p>Desenvolvedor: <%= @game.developer %></p>
+<p>Plataforma: <%= @game.platform %></p>
+<p>Distribuidora: <%= @game.publisher %></p>
+<p>Disponível: <%= @game.avaliable ? "Sim" : "Não" %></p>
+
+<p>
+	<%= link_to "Editar", edit_game_path(@game), :class => "edit" %>
+	<%= link_to "Apagar", game_path(@game), 
+												method: :delete, data: { confirm: "Tem certeza?" }, 
+												:class => "delete" %>
+	<%= link_to "Novo Jogo", new_game_path, :class => "new" %>
+</p>

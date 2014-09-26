@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'games/index'
+
   get 'pages/index'
 
   devise_for :users
@@ -10,6 +12,7 @@ Rails.application.routes.draw do
   root "pages#index"
   get "profile" => "pages#profile"
   resources :clients
+  resources :games
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

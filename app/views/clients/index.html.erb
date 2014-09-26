@@ -13,12 +13,12 @@
 				<td><%= link_to client.first_name+" "+client.last_name, client%></td>
 				<td><%= client.email %></td>
 				<td>
-					<%= link_to "Editar", edit_client_path(client) %>
+					<%= link_to "Editar", edit_client_path(client), :class => "edit"%>
 					<%= link_to "Apagar", client_path(client), 
-																method: :delete, data: { confirm: "Tem certeza?" }%>
+																method: :delete, data: { confirm: "Tem certeza?" }, :class => "delete" %>
 				</td>
 			</tr>
 		<% end %>
 	</tbody>
 </table>
-<%= link_to "Novo Cliente", new_client_path%>
+<%= link_to "Novo Cliente", new_client_path, :class => "new"%>

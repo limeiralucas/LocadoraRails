@@ -6,3 +6,5 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 User.create(email: "lucasalveslm@gmail.com", password: "12345678")
+Game.create(name: "Kingdom Hearts", year: 2002, avaliable: true, developer: "Square Enix", platform: "PS2", publisher: "Sony")
+Game.create(name: "God of War", year: 2006, avaliable: true, developer: "Sony", platform: "PS2", publisher: "Sony")

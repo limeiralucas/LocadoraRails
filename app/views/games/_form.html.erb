@@ -1,0 +1,20 @@
+<%= simple_form_for(@game) do |f|%>
+	<p>
+		<%= f.input :name, placeholder: "Nome", label: "Nome" %>
+	</p>
+	<p>
+		<%= f.input :year, placeholder: "Ano", label: "Ano" %>
+	</p>
+	<p>
+		<%= f.input :developer, placeholder: "Desenvolvedor", label: "Desenvolvedor" %>
+	</p>
+	<p>
+		<%= f.input :publisher, placeholder: "Distribuidora", label: "Distribuidora" %>
+	</p>
+	<p>
+		<%= f.input :avaliable, label: false, hint: "Disponível para aluguel ?" %>
+	</p>
+	<p>
+		<%= f.submit "Salvar" %>
+	</p>
+<% end %>
