@@ -1,2 +1,33 @@
 @import "bootstrap";
 body { padding-top: 70px; }
+
+input {
+	@extend .form-control;
+}
+
+input[type=submit], a[href*=new] {
+	@extend .btn;
+	@extend .btn-sm;
+	@extend .btn-success;
+}
+
+a[href*=edit] {
+	@extend .btn;
+	@extend .btn-sm;
+	@extend .btn-info;
+}
+
+a[data-method=delete] {
+	@extend .btn;
+	@extend .btn-sm;
+	@extend .btn-danger;
+}
+
+table {
+	@extend .table;
+	@extend .table-bordered;
+	@extend .table-striped;
+}
+.form {
+	width: 20%;
+}

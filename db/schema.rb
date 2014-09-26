@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140923171632) do
+ActiveRecord::Schema.define(version: 20140925132507) do
+
+  create_table "clients", force: true do |t|
+    t.string   "first_name",            default: "", null: false
+    t.string   "last_name",             default: "", null: false
+    t.string   "email",                 default: "", null: false
+    t.integer  "cpf",        limit: 11, default: 0,  null: false
+    t.integer  "telephone",             default: 0,  null: false
+    t.string   "address",               default: "", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

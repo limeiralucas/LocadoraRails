@@ -1,0 +1,23 @@
+<%= simple_form_for(@client) do |f|%>
+	<p>
+		<%= f.input :first_name, placeholder: "Nome", label: "Nome"%>
+	</p>
+	<p>
+		<%= f.input :last_name, placeholder: "Sobrenome", label: "Sobrenome" %>
+	</p>
+	<p>
+		<%= f.input :email, placeholder: "email@dominio.com", label: "Email" %>
+	</p>
+	<p>
+		<%= f.input :cpf, placeholder: "9999999999", label: "CPF" %>
+	</p>
+	<p>
+		<%= f.input :telephone, placeholder: "99999999", label: "Telefone" %>
+	</p>
+	<p>
+		<%= f.input :address, placeholder: "Av. João do Carmo, 11, Apto 402", label: "Endereço" %>
+	</p>
+	<p>
+		<%= f.submit "Salvar" %>
+	</p>
+<% end %>
