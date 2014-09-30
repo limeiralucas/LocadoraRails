@@ -1,0 +1,23 @@
+<%= simple_form_for(@movie) do |f|%>
+	<p>
+		<%= f.input :name, placeholder: "Nome", label: "Nome" %>
+	</p>
+	<p>
+		<%= f.input :year, placeholder: "Ano", label: "Ano" %>
+	</p>
+	<p>
+		<%= f.input :genre, placeholder: "Gênero", label: "Gênero" %>
+	</p>
+	<p>
+		<%= f.input :director, placeholder: "Diretor", label: "Diretor" %>
+	</p>
+	<p>
+		<%= f.input :imdb, placeholder: "IMDB", label: "IMDB" %>
+	</p>
+	<p>
+		<%= f.input :avaliable, label: false, hint: "Disponível para aluguel ?" %>
+	</p>
+	<p>
+		<%= f.submit "Salvar" %>
+	</p>
+<% end %>

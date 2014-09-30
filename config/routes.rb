@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   get "profile" => "pages#profile"
   resources :clients
   resources :games
-
+  resources :movies
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

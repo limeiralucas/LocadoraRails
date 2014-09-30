@@ -1,0 +1,16 @@
+<h1><%= @movie.name %></h1>
+
+<p>Nome: <%= @movie.name %></p>
+<p>Ano: <%= @movie.year %></p>
+<p>Gênero: <%= @movie.genre %></p>
+<p>Diretor: <%= @movie.director %></p>
+<p>IMDB: <%= @movie.imdb %></p>
+<p>Disponível: <%= @movie.avaliable ? "Sim" : "Não" %></p>
+
+<p>
+	<%= link_to "Editar", edit_movie_path(@movie), :class => "edit" %>
+	<%= link_to "Apagar", movie_path(@movie), 
+												method: :delete, data: { confirm: "Tem certeza?" }, 
+												:class => "delete" %>
+	<%= link_to "Novo Filme", new_movie_path, :class => "new" %>
+</p>
